@@ -1,50 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Embedded Content</title>
-  <style>
-    /* Reset margins and ensure full viewport coverage */
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    
-    /* Clean, fixed-position iframe styling */
-    iframe {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
-</head>
-<body>
-
-  <iframe 
-    src="https://script.google.com/macros/s/AKfycbzXhhNavDeZRRPv67r9BtnFEmXb92Kleo_bY6Gqif7AewbHxd34tLZGSmTfZxXMBCCQ/exec" 
-    allowfullscreen="true">
-  </iframe>
-
-  <script>
-    // Modernized script with safety checks
-    window.addEventListener('load', () => {
-      const iframe = document.querySelector('iframe');
-      
-      if (iframe && iframe.requestFullscreen) {
-        iframe.requestFullscreen().catch((err) => {
-          // Note: Modern browsers block automatic fullscreen on load unless triggered by user interaction.
-          console.warn(`Fullscreen request was blocked or failed: ${err.message}`);
-        });
-      }
-    });
-  </script>
-
-</body>
+  <body>
+    <script>
+      window.location.href =
+        "https://sites.google.com/view/online-exam-app/home";
+    </script>
+  </body>
 </html>
